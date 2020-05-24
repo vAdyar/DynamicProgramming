@@ -1,4 +1,4 @@
-package bounded.knapsack;
+package knapsack.bounded;
 
 import java.util.Random;
 
