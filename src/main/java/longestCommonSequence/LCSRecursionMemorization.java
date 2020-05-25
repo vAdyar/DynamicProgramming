@@ -26,7 +26,7 @@ public class LCSRecursionMemorization {
 
     public static void main(String[] args) {
         char[] a = "abcdeaf".toCharArray();
-        char[] b ="abcefar".toCharArray();
+        char[] b = "abcefar".toCharArray();
 
         int n = a.length;
         int m = b.length;
