@@ -26,15 +26,15 @@ public class LCSTopDownDP {
 
     public static void main(String[] args) {
 
-        char[] a = "abcdeaf".toCharArray();
-        char[] b = "abcefar".toCharArray();
+        char[] c1 = "abcdeaf".toCharArray();
+        char[] c2 = "abcefar".toCharArray();
 
-        int m = a.length;
-        int n = b.length;
+        int l1 = c1.length;
+        int l2 = c2.length;
 
-        Integer[][] t = new Integer[m+1][n+1];
+        Integer[][] t = new Integer[l1+1][l2+1];
 
-        t=lcsTopDown(a,b,t);
+        t=lcsTopDown(c1,c2,t);
         ArrayUtils.print(t);
     }
 }

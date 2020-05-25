@@ -4,7 +4,7 @@ import utils.ArrayUtils;
 
 public class PrintLCSubsequence {
 
-    public static void printLCS(char[] a, char[] b, int i, int j, Integer[][] t) {
+    public static String printLCS(char[] a, char[] b, int i, int j, Integer[][] t) {
         String s = "";
         while( i!=0 && j!=0 ) {
             if( a[i-1]==b[j-1] ) {
@@ -20,6 +20,7 @@ public class PrintLCSubsequence {
             }
         }
         System.out.println("String: "+s);
+        return s;
     }
 
     public static void main(String[] args) {
