@@ -1,5 +1,7 @@
 package matrixChainMultiplication;
 
+import org.w3c.dom.Node;
+
 //Egg Dropping using Recursion
 //Problem statement: You are given N floor and K eggs. You have to minimize the number of times you have to drop the eggs to find the critical floor where critical floor means the floor beyond which eggs start to break. Assumptions of the problem:
 //
@@ -32,7 +34,7 @@ public class EggDropping {
 
     public static void main(String[] args) {
 
-        int floor = 4;
+        int floor = 20;
         int eggs = 2;
 
         System.out.println(solve(floor, eggs));
