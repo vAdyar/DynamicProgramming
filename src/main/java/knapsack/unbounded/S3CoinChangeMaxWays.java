@@ -7,7 +7,7 @@ import java.util.Arrays;
 //  Coin Change Problem Maximum Number of ways
 // Given a value N, if we want to make change for N cents, and we have infinite supply of each of S = { S1, S2, .. , Sm} valued coins,
 // how many ways can we make the change? The order of coins doesn’t matter.
-public class CoinChangeMaxWays {
+public class S3CoinChangeMaxWays {
 
     public static Integer[][] maxCoinChange(int[] w, Integer[][] t) {
         for (int i = 0; i < t.length; i++) {

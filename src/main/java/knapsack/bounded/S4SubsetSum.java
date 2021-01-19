@@ -2,7 +2,7 @@ package knapsack.bounded;
 
 import utils.ArrayUtils;
 
-public class SubsetSum {
+public class S4SubsetSum {
 
     public static Boolean[][] subsetSum(int[] w, Boolean[][] t) {
         for (int i = 0; i < t.length; i++) {
@@ -25,6 +25,19 @@ public class SubsetSum {
         return t;
     }
 
+    public static boolean subsetSumRecursive(int[] w, int W, int n) {
+        if( n== 0)
+            return false;
+        if( W==0 )
+            return true;
+        if( w[n-1] <= W ) {
+            boolean include = subsetSumRecursive(w, W-w[n-1], n-1);
+            boolean exclude = subsetSumRecursive(w, W, n-1);
+            return include || exclude;
+        } else
+            return subsetSumRecursive(w, W, n-1);
+    }
+
     public static void main(String[] args) {
         int[] w = new int[] {1,3,7};
         int W = 10;
@@ -33,6 +46,7 @@ public class SubsetSum {
         Boolean[][] t = new Boolean[n+1][W+1];
 
         t = subsetSum(w, t);
+        System.out.println(subsetSumRecursive(w, W, n));
 
         ArrayUtils.print(t);
         System.out.println(t[n][W]);

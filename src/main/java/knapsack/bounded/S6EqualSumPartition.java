@@ -5,7 +5,7 @@ import utils.ArrayUtils;
 import java.util.Arrays;
 
 //Find if the given array contains subsets such that their sum is equal using each element in either of the subset.
-public class EqualSumPartition {
+public class S6EqualSumPartition {
 
     public static void main(String[] args) {
         int[] w = new int[] {1,3,7,9,6,4};
@@ -17,7 +17,7 @@ public class EqualSumPartition {
 
         Boolean[][] t = new Boolean[n+1][W+1];
 
-        t = SubsetSum.subsetSum(w,t);
+        t = S4SubsetSum.subsetSum(w,t);
 
         ArrayUtils.print(t);
         System.out.println(t[n][W]);

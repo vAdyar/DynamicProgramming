@@ -2,7 +2,7 @@ package matrixChainMultiplication;
 
 //Scramble String using Recursion
 //Given a string s1, we may represent it as a binary tree by partitioning it to two non-empty substrings recursively.
-public class ScrambledStrings {
+public class S5ScrambledStrings {
 
 //    Memorization to be added, can be added using a map.
     public static boolean solve(String s1, String s2) {

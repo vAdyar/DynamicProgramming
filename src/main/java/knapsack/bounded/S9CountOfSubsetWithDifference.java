@@ -8,7 +8,7 @@ import java.util.Arrays;
 // sum(s1) - sum(s2) = diff
 // sum(s1) + sum(s2) = sum(arr)
 // sum(s1) = (sum(arr) + diff ) / 2         - count of subset sum
-public class CountOfSubsetWithDifference {
+public class S9CountOfSubsetWithDifference {
 
     public static void main(String[] args) {
         int[] w = new int[] {1,3,1,2};
@@ -20,7 +20,7 @@ public class CountOfSubsetWithDifference {
 
         Integer[][] t = new Integer[n+1][W+1];
 
-        t = CountOfSubsetSum.countOfSubsetSum(w, t);
+        t = S5CountOfSubsetSum.countOfSubsetSum(w, t);
 
         ArrayUtils.print(t);
         System.out.println("Count of subset difference=1 is: "+t[n][W]);

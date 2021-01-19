@@ -33,7 +33,7 @@ public class PrintLCSubsequence {
 
         Integer[][] t = new Integer[m+1][n+1];
 
-        t=LCSTopDownDP.lcsTopDown(a,b,t);
+        t= S3LCSTopDownDP.lcsTopDown(a,b,t);
         ArrayUtils.print(t);
         printLCS(a,b,m,n,t);
 

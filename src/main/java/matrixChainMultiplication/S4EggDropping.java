@@ -9,7 +9,7 @@ import org.w3c.dom.Node;
 //If egg does not break at ith floor then it does not break at all lower floors.
 //Unbroken egg can be used again.
 //Note: You have to find minimum trials required to find the critical floor not the critical floor.
-public class EggDropping {
+public class S4EggDropping {
 
 //    Meorization to be added.
     public static int solve(int floor, int eggs) {

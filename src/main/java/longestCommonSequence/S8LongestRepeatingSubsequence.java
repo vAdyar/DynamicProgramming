@@ -5,7 +5,7 @@ import utils.ArrayUtils;
 // Longest Repeating Subsequence
 //Given a string, print the longest repeating subsequence such that the two subsequence don’t have same string character at same position,
 // i.e., any i’th character in the two subsequences shouldn’t have the same index in the original string.
-public class LongestRepeatingSubsequence {
+public class S8LongestRepeatingSubsequence {
 
     public static Integer[][] lrs(char[] c1, char[] c2, Integer[][] t) {
         for (int i = 0; i < t.length; i++) {

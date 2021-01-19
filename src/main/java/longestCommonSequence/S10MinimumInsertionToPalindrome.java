@@ -1,16 +1,15 @@
-package palindrome;
+package longestCommonSequence;
 
-import longestCommonSequence.LCSTopDownDP;
+import longestCommonSequence.S3LCSTopDownDP;
 import longestCommonSequence.PrintLCSubsequence;
 import utils.ArrayUtils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //Minimum number of insertions to make a string palindrome
 //Given a string, find the minimum number of characters to be inserted to form Palindrome string out of given string
-public class MinimumInsertionToPalindrome {
+public class S10MinimumInsertionToPalindrome {
 
     public static void main(String[] args) {
         String str = "agbcba";
@@ -23,7 +22,7 @@ public class MinimumInsertionToPalindrome {
         int l2 = c2.length;
         Integer[][] t = new Integer[l1+1][l2+1];
 
-        t= LCSTopDownDP.lcsTopDown(c1,c2,t);
+        t= S3LCSTopDownDP.lcsTopDown(c1,c2,t);
 
         ArrayUtils.print(t);
 //        Same as number of deletion. As the missing pair can be inserted to a string to make it a pallindrome.

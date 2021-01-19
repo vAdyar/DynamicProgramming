@@ -1,10 +1,10 @@
-package palindrome;
+package longestCommonSequence;
 
-import longestCommonSequence.LCSTopDownDP;
+import longestCommonSequence.S3LCSTopDownDP;
 
 //Longest Palindromic Subsequence
 //Given a sequence, find the length of the longest palindromic subsequence in it.
-public class LongestPalindromicSequence {
+public class S9LongestPalindromicSequence {
 
     public static void main(String[] args) {
         String str = "agbcba";
@@ -17,7 +17,7 @@ public class LongestPalindromicSequence {
         int n = c2.length;
         Integer[][] t = new Integer[m+1][n+1];
 
-        t= LCSTopDownDP.lcsTopDown(c1,c2,t);
+        t= S3LCSTopDownDP.lcsTopDown(c1,c2,t);
         System.out.println("Longest Palindromic Subsequence: "+t[m][n]);
     }
 }

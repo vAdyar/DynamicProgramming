@@ -2,7 +2,7 @@ package longestCommonSequence;
 
 import utils.ArrayUtils;
 
-public class LCSubstring {
+public class S4LCSubstring {
 
     public static void main(String[] args) {
         char[] a = "abdcefg".toCharArray();
@@ -14,7 +14,7 @@ public class LCSubstring {
         Integer[][] t = new Integer[m+1][n+1];
         int max=0;
 
-        for (int i = 0; i < t.length; i++) {
+/**/        for (int i = 0; i < t.length; i++) {
             for (int j = 0; j < t[i].length; j++) {
                 if( i==0 || j==0 )
                     t[i][j] = 0;

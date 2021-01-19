@@ -2,7 +2,7 @@ package longestCommonSequence;
 
 import utils.ArrayUtils;
 
-public class LCSTopDownDP {
+public class S3LCSTopDownDP {
 
     public static Integer[][] lcsTopDown(char[] a, char[] b, Integer[][] t) {
         for (int i = 0; i < t.length; i++) {

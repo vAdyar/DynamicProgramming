@@ -2,7 +2,7 @@ package knapsack.bounded;
 
 import java.util.Random;
 
-public class Recursion {
+public class S1Recursion {
 
     private static int getMax(int[] weight, int[] value, int W, int n) {
         if (n == 0 || W == 0 )

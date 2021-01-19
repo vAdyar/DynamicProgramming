@@ -11,7 +11,7 @@ package matrixChainMultiplication;
 //    |   --- boolean OR
 //    ^   --- boolean XOR
 //Count the number of ways we can parenthesize the expression so that the value of expression evaluates to true.
-public class EvaluateExpressionTrue {
+public class S3EvaluateExpressionTrue {
 
 //    Not evaluating to right answer
     public static int solve(char[] c, int i, int j, char isTrue, Integer[][][] t) {

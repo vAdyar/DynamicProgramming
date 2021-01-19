@@ -5,7 +5,7 @@ import utils.ArrayUtils;
 import java.util.Arrays;
 import java.util.Random;
 
-public class RecursiveMemorization {
+public class S2RecursiveMemorization {
 
     private static int getMax(int[] weight, int[] value, int W, int n, Integer[][] t) {
         int ret = 0;
@@ -14,7 +14,7 @@ public class RecursiveMemorization {
         if(t[n][W] != -1) {
             ret = t[n][W];
             System.out.println("Exiting for n:"+n + " W:"+W);
-            ArrayUtils.print(t);;
+            ArrayUtils.print(t);
             return t[n][W];
         }
         if(n ==0 || W ==0) {

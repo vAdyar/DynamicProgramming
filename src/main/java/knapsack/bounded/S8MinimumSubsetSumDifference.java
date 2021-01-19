@@ -4,7 +4,7 @@ import utils.ArrayUtils;
 
 import java.util.Arrays;
 
-public class MinimumSubsetSumDifference {
+public class S8MinimumSubsetSumDifference {
 
     public static void main(String[] args) {
         int[] w = new int[] {1,3,7,4};
@@ -16,7 +16,7 @@ public class MinimumSubsetSumDifference {
 
         Integer[][] t = new Integer[n+1][W+1];
 
-        t = DynamicArray.maxSum(w,t);
+        t = S3DynamicArray.maxSum(w,t);
 
         ArrayUtils.print(t);
         int diff = 2 * (W - t[n][W]);

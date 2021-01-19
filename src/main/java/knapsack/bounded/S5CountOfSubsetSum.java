@@ -5,7 +5,7 @@ import utils.ArrayUtils;
 import java.util.Arrays;
 
 // Counting the number of subsets whose sum is given.
-public class CountOfSubsetSum {
+public class S5CountOfSubsetSum {
 
     public static Integer[][] countOfSubsetSum(int[] w, Integer[][] t) {
         for (int i = 0; i < t.length; i++) {

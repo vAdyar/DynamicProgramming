@@ -1,4 +1,4 @@
-package palindrome;
+package matrixChainMultiplication;
 
 import utils.ArrayUtils;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 //Palindrome Partitioning using Recursion
 //Given a string, a partitioning of the string is a palindrome partitioning if every substring of the partition is a palindrome.
-public class MCMPalindromePartition {
+public class S2MCMPalindromePartition {
 
     public static int solve(String s, int i, int j, Integer[][] t) {
         int min = Integer.MAX_VALUE;

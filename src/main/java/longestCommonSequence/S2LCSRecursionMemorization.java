@@ -2,7 +2,7 @@ package longestCommonSequence;
 
 import utils.ArrayUtils;
 
-public class LCSRecursionMemorization {
+public class S2LCSRecursionMemorization {
 
     public static int lcs(char[] a, char[] b, int n, int m, Integer[][] t) {
         if( t[n][m] != -1)

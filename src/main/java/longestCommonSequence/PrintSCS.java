@@ -1,6 +1,5 @@
 package longestCommonSequence;
 
-import longestCommonSequence.LCSTopDownDP;
 import utils.ArrayUtils;
 
 //Given two strings X and Y, print the shortest string that has both X and Y as subsequences.
@@ -56,7 +55,7 @@ public class PrintSCS {
         int l2=c2.length;
 
         Integer[][] t = new Integer[l1+1][l2+1];
-        t= LCSTopDownDP.lcsTopDown(c1,c2,t);
+        t= S3LCSTopDownDP.lcsTopDown(c1,c2,t);
         ArrayUtils.print(t);
 
         print(c1,c2,l1,l2,t);

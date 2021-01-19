@@ -4,7 +4,7 @@ import utils.ArrayUtils;
 
 import java.util.Random;
 
-public class DynamicArray {
+public class S3DynamicArray {
 
     public static Integer[][] maxSum(int[] w, Integer[][] t) {
         for (int i = 0; i < t.length; i++) {
@@ -29,7 +29,7 @@ public class DynamicArray {
 
         int[] w = new int[] {1,3,7,2};
 //        int[] value = new int[] {10, 20, 30};
-        int W = 11;
+        int W = 15;
 //        int[] value = random.ints(100000, 10, 100).toArray();
 //		int[] w = random.ints(100000, 10, 100).toArray();
 //        int W = 100;
